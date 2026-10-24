@@ -1,0 +1,590 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#18271F">
+  <meta name="description" content="OPENFIRE — Modern Tropical Luxury Dining.">
+
+  <title>OPENFIRE — Modern Tropical Luxury Dining</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="assets/css/style.css">
+
+  <style>
+    /* OPENFIRE MOBILE SPACING IMPROVEMENTS */
+    @media screen and (max-width: 767px) {
+      html, body {
+        margin: 0;
+        padding: 0;
+        overflow-x: clip;
+      }
+
+      .hero {
+        margin-bottom: 0 !important;
+      }
+
+      .about-section {
+        margin-top: 0 !important;
+        padding-top: 24px !important;
+      }
+
+      .about-grid {
+        margin-top: 0 !important;
+        row-gap: 28px;
+      }
+
+      .about-media {
+        margin-top: 0 !important;
+      }
+
+      .about-section .container {
+        padding-top: 0;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html {
+        scroll-behavior: auto;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <a class="skip-link" href="#main" data-i18n="skip">
+    Langsung ke konten
+  </a>
+
+  <!-- HEADER -->
+  <header class="site-header" id="site-header">
+    <div class="nav-wrap">
+
+      <a class="identity" href="#beranda" aria-label="OPENFIRE — Beranda">
+        <img data-asset="__ASSET_61__" alt="Logo OPENFIRE" width="58" height="58">
+        <span>OPENFIRE</span>
+      </a>
+
+      <nav class="main-nav" id="main-nav" aria-label="Navigasi utama">
+        <a href="#beranda" data-i18n="nav_home">Beranda</a>
+        <a href="#tentang" data-i18n="nav_about">Tentang Kami</a>
+        <a href="#menu" data-i18n="nav_menu">Menu</a>
+        <a href="#galeri" data-i18n="nav_gallery">Galeri</a>
+        <a href="#lokasi" data-i18n="nav_location">Lokasi</a>
+        <a href="#kontak" data-i18n="nav_contact">Hubungi Kami</a>
+      </nav>
+
+      <div class="nav-actions">
+
+        <label class="language-chooser">
+          <span class="sr-only" data-i18n="language_choose">
+            Pilih bahasa
+          </span>
+          <select id="language-select" aria-label="Pilih bahasa">
+            <option value="id">ID</option>
+            <option value="en">EN</option>
+          </select>
+        </label>
+
+        <a class="nav-contact" id="nav-whatsapp"
+           href="https://wa.me/62895637382492"
+           target="_blank" rel="noopener noreferrer"
+           data-i18n="nav_reserve">
+          Hubungi Kami
+        </a>
+
+        <button type="button" class="menu-toggle"
+                id="menu-toggle"
+                aria-label="Buka menu"
+                aria-expanded="false"
+                aria-controls="main-nav">
+          <span></span>
+          <span></span>
+        </button>
+
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- HERO -->
+    <section class="hero" id="beranda">
+
+      <div class="hero-bg" id="hero-bg"></div>
+      <div class="hero-shade"></div>
+
+      <div class="hero-inner container">
+
+        <div class="hero-content">
+
+          <div class="eyebrow eyebrow-light">
+            <span class="line"></span>
+            <span data-section="hero:eyebrow">
+              THE ART OF GATHERING
+            </span>
+          </div>
+
+          <h1 data-section="hero:title">
+            Where Fire Meets Flavor.
+          </h1>
+
+          <p class="hero-description" data-section="hero:body">
+            Perpaduan cita rasa, kehangatan, dan pengalaman
+            bersantap yang tak terlupakan.
+          </p>
+
+          <div class="hero-buttons">
+
+            <a href="#menu" class="btn btn-copper"
+               data-section="hero:button_label">
+              Jelajahi Menu
+            </a>
+
+            <a href="#lokasi" class="btn btn-outline"
+               data-section="hero:button_label_secondary">
+              Temukan Kami
+            </a>
+
+          </div>
+        </div>
+
+        <div class="hero-side-mark">
+          <span>O</span>
+          <span>F</span>
+          <div class="vertical-line"></div>
+          <small>MODERN TROPICAL LUXURY</small>
+        </div>
+
+      </div>
+
+      <div class="hero-bottom">
+
+        <div class="hero-bottom-left">
+          <span class="tiny-square"></span>
+          <span data-i18n="hero_location">
+            Pengalaman bersantap tropis
+          </span>
+        </div>
+
+        <a href="#tentang" class="scroll-link">
+          <span data-i18n="discover_more">
+            Jelajahi lebih jauh
+          </span>
+          ↓
+        </a>
+
+        <span class="hero-index">01 — 05</span>
+
+      </div>
+
+    </section>
+
+    <!-- TENTANG KAMI -->
+    <section id="tentang" class="section about-section">
+
+      <div class="container about-grid">
+
+        <div class="about-media reveal">
+
+          <div class="about-image">
+            <img id="about-photo"
+                 width="990" height="1280"
+                 alt="Interior hangat restoran OPENFIRE"
+                 loading="lazy">
+          </div>
+
+          <span class="about-photo-tag">
+            <span>THE OPENFIRE CONCEPT</span> ◆
+          </span>
+
+        </div>
+
+        <div class="about-copy reveal">
+
+          <span class="eyebrow">
+            <span class="mini-diamond"></span>
+            <span data-section="about:eyebrow">KISAH KAMI</span>
+          </span>
+
+          <h2 class="display-title" data-section="about:title">
+            Lebih dari sekadar tempat bersantap.
+          </h2>
+
+          <div class="gold-line"></div>
+
+          <p class="large-copy" data-section="about:body"></p>
+
+          <div class="small-feature">
+            <span class="feature-icon">✳</span>
+            <div>
+              <span data-i18n="about_label">
+                Ruang untuk melambat sejenak
+              </span>
+              <p data-i18n="about_feature"></p>
+            </div>
+          </div>
+
+          <a href="#galeri" class="text-link">
+            <span data-i18n="see_atmosphere">
+              Lihat suasana kami
+            </span>
+            <span aria-hidden="true">↗</span>
+          </a>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- SIGNATURE EXPERIENCE -->
+    <section class="manifesto" id="pengalaman">
+
+      <div class="container manifesto-inner">
+
+        <p class="eyebrow eyebrow-light"
+           data-section="feature_fire:eyebrow"></p>
+
+        <h2 data-section="feature_fire:title"></h2>
+
+        <p data-section="feature_fire:body"></p>
+
+      </div>
+
+      <div class="manifesto-pic" id="fire-photo"></div>
+
+    </section>
+
+    <!-- ATMOSFER RESTORAN -->
+    <section class="section experience-section">
+
+      <div class="container experience-grid">
+
+        <div class="experience-text reveal">
+
+          <span class="eyebrow">
+            <span class="mini-diamond"></span>
+            <span data-section="feature_space:eyebrow"></span>
+          </span>
+
+          <h2 class="display-title"
+              data-section="feature_space:title"></h2>
+
+          <p class="large-copy"
+             data-section="feature_space:body"></p>
+
+          <div class="experience-points">
+            <div>
+              <span>01</span>
+              <span data-i18n="experience_one"></span>
+            </div>
+            <div>
+              <span>02</span>
+              <span data-i18n="experience_two"></span>
+            </div>
+            <div>
+              <span>03</span>
+              <span data-i18n="experience_three"></span>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="experience-image reveal">
+          <img id="space-photo"
+               width="990" height="739"
+               alt="Area makan OPENFIRE dengan nuansa tropis"
+               loading="lazy">
+        </div>
+
+      </div>
+    </section>
+
+    <!-- MENU -->
+    <section class="section menu-section" id="menu">
+
+      <div class="container">
+
+        <div class="section-top reveal">
+
+          <div>
+            <p class="eyebrow">
+              <span class="mini-diamond"></span>
+              <span data-section="menu_intro:eyebrow"></span>
+            </p>
+
+            <h2 class="display-title"
+                data-section="menu_intro:title"></h2>
+          </div>
+
+          <p class="section-intro"
+             data-section="menu_intro:body"></p>
+
+        </div>
+
+        <div id="menu-filters" class="menu-filters"
+             role="group" aria-label="Filter kategori menu"></div>
+
+        <div id="menu-grid" class="menu-grid"></div>
+
+        <div class="menu-empty" id="menu-empty" hidden>
+          <p data-i18n="menu_empty">
+            Belum ada hidangan dalam kategori ini.
+          </p>
+        </div>
+
+        <p class="menu-note" data-i18n="menu_note"></p>
+
+      </div>
+    </section>
+
+    <!-- GALERI -->
+    <section class="section gallery-section" id="galeri">
+
+      <div class="container">
+
+        <div class="section-top reveal">
+
+          <div>
+            <p class="eyebrow">
+              <span class="mini-diamond"></span>
+              <span data-section="gallery_intro:eyebrow"></span>
+            </p>
+
+            <h2 class="display-title"
+                data-section="gallery_intro:title"></h2>
+          </div>
+
+          <p class="section-intro"
+             data-section="gallery_intro:body"></p>
+
+        </div>
+
+        <div id="gallery-grid" class="gallery-grid"></div>
+
+      </div>
+    </section>
+
+    <!-- LOKASI -->
+    <section class="location-section" id="lokasi">
+
+      <div class="container location-top">
+
+        <div>
+          <p class="eyebrow eyebrow-light"
+             data-section="location_intro:eyebrow"></p>
+
+          <h2 class="display-title light"
+              data-section="location_intro:title"></h2>
+
+          <p data-section="location_intro:body"></p>
+        </div>
+
+        <div class="location-address">
+
+          <span data-i18n="address_label">ALAMAT</span>
+          <p id="location-address"></p>
+
+          <span data-i18n="landmark_label">PATOKAN</span>
+          <p id="location-landmark"></p>
+
+          <a id="directions-btn"
+             class="btn btn-copper"
+             target="_blank"
+             rel="noopener noreferrer">
+            <span data-i18n="directions">Petunjuk Arah</span> ↗
+          </a>
+
+        </div>
+
+      </div>
+
+      <div class="container map-container">
+
+        <iframe id="openfire-map"
+                title="Peta lokasi demonstrasi OPENFIRE"
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+                allowfullscreen>
+        </iframe>
+
+        <div class="map-fallback">
+          <span data-i18n="map_fallback"></span>
+          <a id="map-fallback-link"
+             target="_blank"
+             rel="noopener noreferrer"
+             data-i18n="open_maps"></a>
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- KONTAK -->
+    <section class="contact-section" id="kontak">
+
+      <div class="container contact-inner">
+
+        <div>
+          <p class="eyebrow"
+             data-section="contact_intro:eyebrow"></p>
+
+          <h2 data-section="contact_intro:title"></h2>
+
+          <p data-section="contact_intro:body"></p>
+
+          <p id="contact-number" class="contact-number"></p>
+        </div>
+
+        <a id="contact-whatsapp"
+           class="circle-cta"
+           href="https://wa.me/62895637382492"
+           target="_blank"
+           rel="noopener noreferrer"
+           aria-label="Hubungi OPENFIRE melalui WhatsApp">
+
+          <span>↗</span>
+          <small data-i18n="chat_whatsapp"></small>
+
+        </a>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+
+    <div class="container">
+
+      <div class="footer-main">
+
+        <div class="footer-brand">
+          <img data-asset="__ASSET_61__"
+               loading="lazy"
+               width="140" height="140"
+               alt="OPENFIRE">
+
+          <p data-section="footer:body"></p>
+        </div>
+
+        <div class="footer-col">
+
+          <span data-i18n="footer_explore"></span>
+
+          <a href="#beranda" data-i18n="nav_home"></a>
+          <a href="#tentang" data-i18n="nav_about"></a>
+          <a href="#menu" data-i18n="nav_menu"></a>
+          <a href="#galeri" data-i18n="nav_gallery"></a>
+
+        </div>
+
+        <div class="footer-col">
+
+          <span data-i18n="footer_connect"></span>
+
+          <a id="footer-wa"
+             target="_blank"
+             rel="noopener noreferrer"
+             class="social-link">
+            <img data-asset="__ASSET_62__"
+                 class="footer-social-icon" alt="">
+            WhatsApp <span>↗</span>
+          </a>
+
+          <a id="footer-instagram"
+             target="_blank"
+             rel="noopener noreferrer"
+             class="social-link">
+            <img data-asset="__ASSET_63__"
+                 class="footer-social-icon" alt="">
+            Instagram <span>↗</span>
+          </a>
+
+          <a id="footer-tiktok"
+             target="_blank"
+             rel="noopener noreferrer"
+             class="social-link">
+            <img data-asset="__ASSET_64__"
+                 class="footer-social-icon" alt="">
+            TikTok <span>↗</span>
+          </a>
+
+        </div>
+
+        <div class="footer-col footer-visit">
+
+          <span data-i18n="footer_visit"></span>
+
+          <p id="footer-address"></p>
+
+          <a id="footer-route"
+             target="_blank"
+             rel="noopener noreferrer"
+             data-i18n="directions"></a>
+
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+
+        <span>
+          © 2026 OPENFIRE.
+          <span data-i18n="rights"></span>
+        </span>
+
+        <span data-i18n="portfolio_note"></span>
+
+        <a href="#beranda" data-i18n="back_to_top"></a>
+
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- GALERI LIGHTBOX -->
+  <dialog id="lightbox"
+          class="lightbox"
+          aria-label="Pratinjau foto galeri">
+
+    <button id="lightbox-close"
+            type="button"
+            class="lightbox-close"
+            aria-label="Tutup">
+      ✕
+    </button>
+
+    <button id="lightbox-prev"
+            type="button"
+            class="lightbox-arrow left"
+            aria-label="Foto sebelumnya">
+      ←
+    </button>
+
+    <figure>
+      <img id="lightbox-image" src="" alt="">
+      <figcaption id="lightbox-caption"></figcaption>
+    </figure>
+
+    <button id="lightbox-next"
+            type="button"
+            class="lightbox-arrow right"
+            aria-label="Foto selanjutnya">
+      →
+    </button>
+
+  </dialog>
+
+  <!-- JAVASCRIPT -->
+  <script src="assets/js/main.js" defer></script>
+  <script src="assets/js/extras.js" defer></script>
+
+</body>
+</html>
